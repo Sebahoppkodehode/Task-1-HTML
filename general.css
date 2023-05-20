@@ -1,0 +1,46 @@
+body {
+  background-color: rgb(163, 223, 223);
+  padding: 20px;
+}
+input {
+  margin: 0px;
+  padding: 0px;
+}
+h1 {
+  color: rgb(255, 255, 255);
+  background: linear-gradient(
+    90deg,
+    rgba(131, 58, 180, 1) 0%,
+    rgba(253, 29, 29, 1) 50%,
+    rgba(252, 176, 69, 1) 100%
+  );
+  padding: 20px;
+}
+a {
+  font-style: italic;
+}
+p {
+  color: blueviolet;
+  background: linear-gradient(
+    90deg,
+    rgb(126, 247, 130) 0%,
+    rgb(246, 220, 220) 50%,
+    rgb(41, 195, 251) 100%
+  );
+}
+.image {
+  border-radius: 20%;
+  object-fit: scale-down;
+  max-width: 80px;
+}
+.image:hover {
+  animation: rotation 0.1s infinite linear;
+}
+@keyframes rotation {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(359deg);
+  }
+}
